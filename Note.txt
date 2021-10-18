@@ -1,0 +1,8 @@
+// CORS CONFIGURATION
+Au lieu de la méthode AllowAnyOrigin() qui autorise les requêtes de n'importe quel
+source, nous pouvons utiliser le WithOrigins("https://example.com") qui
+autoriser uniquement les requêtes provenant de cette source concrète. Aussi, au lieu de
+AllowAnyMethod() qui autorise toutes les méthodes HTTP, nous pouvons utiliser
+WithMethods("POST", "GET") qui n'autorisera que des méthodes HTTP spécifiques.
+De plus, vous pouvez apporter les mêmes modifications pour AllowAnyHeader()
+en utilisant, par exemple, la méthode WithHeaders("accept", "content type") pour autoriser uniquement des en-têtes spécifiques.
