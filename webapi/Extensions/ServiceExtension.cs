@@ -1,14 +1,23 @@
 using Contrats;
+<<<<<<< HEAD
 using Entities;
 using LoggerService;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
+=======
+using LoggerService;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+>>>>>>> 5e5f25b94ae9ecca6b03176c029d8639e4d11003
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+<<<<<<< HEAD
 using Repository;
+=======
+>>>>>>> 5e5f25b94ae9ecca6b03176c029d8639e4d11003
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -39,6 +48,7 @@ namespace webapi
         public static void ConfigureLoggerService(this IServiceCollection services) =>
 services.AddScoped<ILoggerManager, LoggerManager>();
 
+<<<<<<< HEAD
         // CONNECTION SQL SERVER
         public static void ConfigureSqlContext(this IServiceCollection services,
 IConfiguration configuration) =>
@@ -55,4 +65,9 @@ b.MigrationsAssembly("webapi")));
 
 
 
+=======
+    }
+
+
+>>>>>>> 5e5f25b94ae9ecca6b03176c029d8639e4d11003
 }

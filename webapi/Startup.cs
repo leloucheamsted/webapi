@@ -21,7 +21,11 @@ namespace webapi
     {
         public Startup(IConfiguration configuration)
         {
+<<<<<<< HEAD
             LogManager.LoadConfiguration(string.Concat(Directory.GetCurrentDirectory(), "/nlog.config"));
+=======
+            LogManager.LoadConfiguration(string.Concat(Directory.GetCurrentDirectory(), "C:/vs2021/webapi/webapi/nlog.config"));
+>>>>>>> 5e5f25b94ae9ecca6b03176c029d8639e4d11003
             Configuration = configuration;
         }
 
@@ -34,11 +38,15 @@ namespace webapi
             services.ConfigureCors();
             services.ConfigureIISIntegration();
             services.ConfigureLoggerService();
+<<<<<<< HEAD
 
             //
             services.ConfigureSqlContext(Configuration);
             services.ConfigureRepositoryManager();
             services.AddAutoMapper(typeof(Startup)); // Ajout de l'autoMapper
+=======
+            //
+>>>>>>> 5e5f25b94ae9ecca6b03176c029d8639e4d11003
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

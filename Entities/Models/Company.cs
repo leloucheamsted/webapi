@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+<<<<<<< HEAD
 using System.ComponentModel.DataAnnotations.Schema;
+=======
+>>>>>>> 5e5f25b94ae9ecca6b03176c029d8639e4d11003
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
